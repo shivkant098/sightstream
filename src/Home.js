@@ -1,38 +1,32 @@
-import React, { useCallback, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 import Offer from './components/Offer';
-export default function Home() {
-  const [value, setValue] = useState('');
-  const navigate = useNavigate();
+import Navbar from './components/Navbar';
 
-  // Handle Join Room Function 
-  const handleJoinRoom = useCallback(() => {
-    if (!value) {
-      return alert('Please Enter Your Room Id to Join meet');
-    }
-    navigate(`/room/${value}`);
-  }, [value, navigate]);
+export default function Home() {
+  const containerStyle = {
+    borderTopRightRadius: '430px',
+    borderBottomRightRadius: '430px',
+  };
 
   return (
     <>
-    <Offer/>
-    <div>
-      <input
-        type="text"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-        // className='bg-gray-950 rounded-lg border border-gray-600 py-2 px-2 outline-none w-80 lg:w-96 text-lg text-white mb-5'
-        placeholder='Enter Room Code to join Meet'
-      />
-      <button
-        type='button'
-        onClick={handleJoinRoom}
-        // className='bg-gray-900 hover:bg-gray-800 border border-gray-700 text-gray-300 font-bold px-8 py-2 rounded-lg w-full'
-      >
-        Join Meet
-      </button>
-    </div>
-
+      <Offer />
+      <Navbar />
+      <div className='home-content-1 flex'>
+        <div className='w-1/2 bg-slate-400 p-8' style={containerStyle}>
+          <div>
+            <img
+    src="https://i.ibb.co/M1v9DC0/image.png"
+alt='home-img'
+              className='h-80'
+            />
+          </div>
+        </div>
+        <div className='w-1/2 p-8'>
+        <p className='bg-color'>Move faster with your tools in one place
+</p>
+        </div>
+      </div>
     </>
   );
 }

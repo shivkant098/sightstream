@@ -1,10 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-const Pricing=()=>{
-return(
-<>
-<h1>Pricing page</h1>
-</>
-)
+function Pricing() {
+  return (
+    <div>Pricing</div>
+  )
 }
-export default Pricing;
+
+export default Pricing
