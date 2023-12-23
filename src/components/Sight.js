@@ -1,9 +1,10 @@
 import React from 'react';
+import Home from '../Home';
 
 const Sight=()=>{
 return(
 <>
-<h1>sight page or home page</h1>
+<Home/>
 </>
 )
 }

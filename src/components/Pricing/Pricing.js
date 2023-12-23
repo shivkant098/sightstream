@@ -1,6 +1,5 @@
 import { CheckIcon } from '@heroicons/react/20/solid'
-import Navbar from './Navbar'
-import Offer from './Offer'
+
 const includedFeatures = [
   'Private forum access',
   'Member resources',
@@ -9,11 +8,7 @@ const includedFeatures = [
 ]
 
 export default function Pricing() {
-
   return (
-    <>
-    <Offer/>
-    <Navbar/>
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
@@ -55,7 +50,7 @@ export default function Pricing() {
                   <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">USD</span>
                 </p>
                 <a
-                  href="a"
+                  href="#"
                   className="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Get access
@@ -69,6 +64,5 @@ export default function Pricing() {
         </div>
       </div>
     </div>
-    </>
   )
 }

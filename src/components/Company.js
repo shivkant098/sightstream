@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 function Company() {
   return (
-    <div>Company</div>
+<div>
+      <Navbar/>
+     <h1> Sorry! Page is under working</h1>
+      </div>
   )
 }
 
