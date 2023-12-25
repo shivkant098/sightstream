@@ -16,7 +16,7 @@ const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
             serverSecret,
             roomId,
             Date.now().toString(),
-            "Enter your name"
+            "Enter your name by replacing it"
         );
 
         const zc = ZegoUIKitPrebuilt.create(kitToken);
@@ -24,7 +24,7 @@ const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
             container: element,
             sharedLinks: [{
                 name: 'Copy Link',
-                url: `http://localhost:5173/room/${roomId}`
+                url: `https://sightstream.vercel.app/room/${roomId}`
             }],
             scenario: {
                 mode: ZegoUIKitPrebuilt.OneONoneCall
