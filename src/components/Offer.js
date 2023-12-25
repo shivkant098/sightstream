@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { XMarkIcon } from '@heroicons/react/20/solid'
 
 export default function Offer() {
         const [currentDate, setCurrentDate] = useState('');
-      
+        const navigate = useNavigate();
+
         useEffect(() => {
           // Function to update current date and year
           const updateDate = () => {
@@ -25,7 +27,7 @@ export default function Offer() {
         }, []);
       
   return (
-    <div className="relative isolate flex items-center gap-x-6 overflow-hidden pb-1 bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+    <div className="relative isolate flex items-center gap-x-6 overflow-hidden pb-1 bg-lime-200 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
       <div
         className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
         aria-hidden="true"
@@ -58,8 +60,8 @@ export default function Offer() {
           </svg>
           Hurry Up Join Our Community.
         </p>
-        <a
-          href="#as"
+        <a onClick={() => navigate("/login")} 
+          href="/login"
           className="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
         >
           Register now <span aria-hidden="true">&rarr;</span>

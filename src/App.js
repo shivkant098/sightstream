@@ -7,8 +7,10 @@ import Main from './components/main';
 import Features from './components/Features';
 import Pricing from './components/Pricing';
 import Company from './components/Company';
-import Learn from './components/Learn';
-import Read from "./components/Read";
+import Login from './components/Login';
+// import Footer from './components/Footer';
+// import Learn from './components/Learn';
+// import Read from "./components/Read";
 
 function App() {
     return (
@@ -19,8 +21,12 @@ function App() {
             <Route path="/features" element={<Features />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/company" element={<Company />} />
-            <Route path="/learn" element={<Learn />} />
-            <Route path="/read" element={<Read />} />
+            <Route path="/login" element={<Login />} />
+            {/* <Route path="/footer" element={<Footer />} /> */}
+
+
+            {/* <Route path="/learn" element={<Learn />} />
+            <Route path="/read" element={<Read />} /> */}
 
 
         </Routes>

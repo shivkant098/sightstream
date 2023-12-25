@@ -1,6 +1,7 @@
 import { CheckIcon } from '@heroicons/react/20/solid'
 import Navbar from './Navbar'
 import Offer from './Offer'
+import Footer from './Footer'
 const includedFeatures = [
   'Private forum access',
   'Member resources',
@@ -14,6 +15,7 @@ export default function Pricing() {
     <>
       <Offer />
       <Navbar />
+
       
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -23,7 +25,7 @@ export default function Pricing() {
             Feel free to adapt and modify this paragraph to better suit the specific features and value propositions of your video call web app.</p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-        <div className="p-8 sm:p-10 lg:flex-auto">
+        <div className="p-8 sm:p-10 lg:flex-auto ">
           <h3 className="text-2xl font-bold tracking-tight text-gray-900">Life Time membership</h3>
           <p className="mt-6 text-base leading-7 text-gray-600">
             Feel free to customize this paragraph to better fit the specific features and benefits your video call web app offers, as well as any unique selling points you'd like to highlight.
@@ -164,6 +166,7 @@ export default function Pricing() {
       </div>
       </div>
     </div>
+    <Footer/>
 
     </>
   )

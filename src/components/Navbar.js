@@ -18,19 +18,19 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-white ">
+    <div className="bg-lime-200 ">
       <header className="absolute inset-x-0 top-0 z-50 pb-0 pt-3">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a                   onClick={()=>navigate("/sight")}    
- href="/sight" className="-m-1.5 p-1.5">
+            <a onClick={() => navigate("/")}
+              href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Sight Stream</span>
               {/* <img
                 className="h-8 w-auto"
                 src='https://sdn.signalhire.co/storage/company/3a91/ccab/0d07/e977/1b1d/3a93/2c27/8996.webp'
                 alt=""
               /> */}
-            <h1 className='text-bold'>Sight Stream</h1>
+              <h1 className='text-bold'>Sight Stream</h1>
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -51,8 +51,8 @@ export default function Navbar() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a                   onClick={()=>navigate("/login")}    
- href="/login" className="text-sm font-semibold leading-6 text-gray-900">
+            <a onClick={() => navigate("/login")}
+              href="/login" className="text-sm font-semibold leading-6 text-gray-900">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -61,15 +61,15 @@ export default function Navbar() {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a                   onClick={()=>navigate("/sight")}    
- href="/sight" className="-m-1.5 p-1.5">
+              <a onClick={() => navigate("/")}
+                href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Sight Stream</span>
                 {/* <img
                   className="h-8 w-auto"
                   src="https://sdn.signalhire.co/storage/company/3a91/ccab/0d07/e977/1b1d/3a93/2c27/8996.webp"
                       alt="logo"
                 /> */}
-<h1 className='font-semibold'>Sight Stream</h1>
+                <h1 className='font-semibold'>Sight Stream</h1>
               </a>
               <button
                 type="button"
@@ -95,7 +95,7 @@ export default function Navbar() {
                 </div>
                 <div className="py-6">
                   <a
-                  onClick={()=>navigate("/login")}    
+                    onClick={() => navigate("/login")}
 
                     href="/login"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -126,7 +126,7 @@ export default function Navbar() {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Announcing our next Level of Products.{' '}
-              <a onClick={()=>navigate("/read")} href="/read" className="font-semibold text-indigo-600">
+              <a onClick={() => navigate("/features")} href="/features" className="font-semibold text-indigo-600">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
@@ -134,19 +134,19 @@ export default function Navbar() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Elevate Your conversations with SS
+              Elevate Your conversations with SS
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-            "In a world of pixels, make your connections real. Sight Stream-Video calls that transcend boundaries."
+              "In a world of pixels, make your connections real. Sight Stream-Video calls that transcend boundaries."
 
-</p>
+            </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-  <a onClick={()=>navigate("/main")}  href="/main"
-  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-    Get started
-  </a>
+              <a onClick={() => navigate("/main")} href="/main"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                Get started
+              </a>
 
-              <a onClick={()=>navigate("/learn")}  href="learn" className="text-sm font-semibold leading-6 text-gray-900">
+              <a onClick={() => navigate("/features")} href="features" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>

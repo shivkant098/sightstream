@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import ParallaxCompany from './ParallaxCompany'
+import Footer from './Footer'
 // import Parallax from './Parallax'
 function Company() {
     return (
@@ -10,7 +11,7 @@ function Company() {
             <ParallaxCompany />
             {/* <Parallax/> */}
 
-            <div class="gap-8 md:flex">
+            <div class="gap-8 pt-10 md:flex">
                 <div class="mb-8 text-center md:w-1/2 md:mb-0">
                     <img class="w-48 h-48 mx-auto -mb-24 rounded-full"
                         src='https://i.ibb.co/Zdq6Q64/shiv-kant.jpg'
@@ -51,7 +52,7 @@ function Company() {
                     </div>
                 </div>
             </div>
-
+<Footer/>
         </>
     )
 }

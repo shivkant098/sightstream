@@ -8,7 +8,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   const stats = [
-    { id: 1, name: 'of users say that Slack has improved communication', value: '85%' },
+    { id: 1, name: 'of users say that Sight Stream has improved communication', value: '85%' },
     { id: 2, name: 'feel that their ability to work remotely has improved', value: '86%' },
     { id: 3, name: 'feel more connected to their teams', value: '88%' },
   ]
@@ -22,7 +22,7 @@ export default function Home() {
     
     borderBottomLeftRadius:'5rem',
     borderBottomRightRadius: '6rem',  // Corrected property name
-
+marginBottom:'0.1rem',
     paddingTop:'5rem',
     paddingBottom:'5rem',
 
@@ -75,16 +75,17 @@ export default function Home() {
         <div className='w-1/2 bg-slate-400 p-8' style={containerStyle}>
           <div>
             <img
-              src="https://i.ibb.co/M1v9DC0/image.png"
+                src='https://i.ibb.co/M2qd13w/image.png'
+
               alt='home-img'
-              className='h-80'
+              className='h-200 float-left'
             />
           </div>
         </div>
         <div className='w-1/2 p-6 ' style={{ paddingLeft: '9rem', paddingRight: '1.9rem', marginBottom: '1rem' }}>
           <p className='text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl '>Move faster with your <br />tools in one place
           </p>
-          <p className='text-base leading-7 text-gray-600 '>Automate away routine tasks with the power of generative AI and simplify your workflow with all your favourite apps ready to go in Slack.
+          <p className='text-base leading-7 text-gray-600 '>Automate away routine tasks with the power of generative AI and simplify your workflow with all your favourite apps ready to go in Sight Stream.
 
           </p>
         </div>
@@ -95,18 +96,18 @@ export default function Home() {
       <div className='home-content-1 flex bg-red-200' style={{ paddingTop: '5rem' }}>
 
         <div className='w-1/2 bg-orange-400 p-8' style={containerStyle1}>
-          <div>
+          <div className='img1 h-120 float float-right'>
             <img
-              src="https://i.ibb.co/M1v9DC0/image.png"
-              alt='home-img'
-              className='h-80'
+alt='home-img'
+src="https://i.ibb.co/L8vwRmV/image.png"
+
             />
           </div>
         </div>
         <div className='w-1/2 p-6 ' style={{ paddingLeft: '9rem', paddingRight: '1.9rem', marginBottom: '1rem' }}>
           <p className='text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl '>Move faster with your <br />tools in one place
           </p>
-          <p className='text-base leading-7 text-gray-600 '>Automate away routine tasks with the power of generative AI and simplify your workflow with all your favourite apps ready to go in Slack.
+          <p className='text-base leading-7 text-gray-600 '>Automate away routine tasks with the power of generative AI and simplify your workflow with all your favourite apps ready to go in Sight Stream.
 
           </p>
         </div>
@@ -116,8 +117,9 @@ export default function Home() {
         <div className='w-1/2 bg-amber-400 p-8' style={containerStyle}>
           <div>
             <img
-              src='https://assets-v2.lottiefiles.com/a/f6bdc21c-1166-11ee-9666-373bb5c99115/k8b0B8d26M.gif'
-              alt='home-img'
+src='https://i.ibb.co/1zVGbXg/image.png'
+
+alt='home-img'
               className='h-80'
             />
           </div>
@@ -125,7 +127,7 @@ export default function Home() {
         <div className='w-1/2 p-6 ' style={{ paddingLeft: '9rem', paddingRight: '1.9rem', marginBottom: '1rem' }}>
           <p className='text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl '>Move faster with your <br />tools in one place
           </p>
-          <p className='text-base leading-7 text-gray-600 '>Automate away routine tasks with the power of generative AI and simplify your workflow with all your favourite apps ready to go in Slack.
+          <p className='text-base leading-7 text-gray-600 '>Automate away routine tasks with the power of generative AI and simplify your workflow with all your favourite apps ready to go in Sight Stream.
 
           </p>
         </div>
@@ -160,8 +162,8 @@ export default function Home() {
       </div>
 
       {/* here all last  */}
-      <div className='last bg-teal-400' style={Laststyles}>
-        <h1 style={headingStyle1}>See all that you can accomplish with Slack
+      <div className='last  bg-teal-400' style={Laststyles}>
+        <h1 style={headingStyle1}>See all that you can accomplish with Sight Stream
         </h1>
         <button
           onClick={() => navigate("/main")}
