@@ -9,8 +9,8 @@ export default function Room() {
 
     // myMeeting Function
     const myMeeting = async (element) => {
-        const appID = 1520846405;
-const serverSecret = "a16251b254a09818f5d18449a404e45f";
+        const appID = 23875753;
+const serverSecret = "e96483beddd469e2331e3a65d877ac47";
 const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
             appID,
             serverSecret,
